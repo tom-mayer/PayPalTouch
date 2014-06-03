@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaypalTest", "PaypalTest\PaypalTest.csproj", "{862D399F-DF8C-4C2C-BA78-688C094C39DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaypalBinding", "PaypalBinding\PaypalBinding.csproj", "{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaypalIOSBinding", "PaypalBinding\PaypalIOSBinding.csproj", "{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -112,9 +112,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\PaypalBinding\PaypalBinding.csproj">
+    <ProjectReference Include="..\PaypalBinding\PaypalIOSBinding.csproj">
       <Project>{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}</Project>
-      <Name>PaypalBinding</Name>
+      <Name>PaypalIOSBinding</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
