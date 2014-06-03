@@ -225,7 +225,6 @@ namespace Paypal
     [Model, BaseType(typeof(NSObject))]
     public partial interface PayPalPaymentDelegate
     {
-
         [Export("payPalPaymentDidCancel:")]
         void DidCancelPayment(PayPalPaymentViewController paymentViewController);
 

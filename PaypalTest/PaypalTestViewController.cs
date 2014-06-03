@@ -33,7 +33,7 @@ namespace PaypalTest
                 Name = "DoofesDing", 
                 Price = new NSDecimalNumber("10.00"),
                 Currency = "EUR",
-                Quantity = 300,
+                Quantity = 1,
                 Sku = "FOO-29376"
             };
 
@@ -41,7 +41,7 @@ namespace PaypalTest
                 Name = "DoofesDing2", 
                 Price = new NSDecimalNumber("15.00"),
                 Currency = "EUR",
-                Quantity = 666,
+                Quantity = 1,
                 Sku = "FOO-23476"
             };
 
@@ -63,6 +63,7 @@ namespace PaypalTest
             payBtn.TouchUpInside += (object sender, EventArgs e) => {
                 this.PresentViewController(paypalVC, true, null);
             };
+            Add(payBtn);
         }
             
     }
