@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaypalTest", "PaypalTest\PaypalTest.csproj", "{862D399F-DF8C-4C2C-BA78-688C094C39DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaypalBinding", "PaypalBinding\PaypalBinding.csproj", "{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Release|iPhone.Build.0 = Release|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{65FB5112-7DFC-439E-B5BA-1BA9084BAA32}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Debug|iPhone.Build.0 = Debug|iPhone
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Release|iPhone.ActiveCfg = Release|iPhone
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Release|iPhone.Build.0 = Release|iPhone
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{862D399F-DF8C-4C2C-BA78-688C094C39DD}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Release|iPhone.Build.0 = Release|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{906EE7E4-46DF-4AE6-AA99-9D5694FE1B88}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PaypalTest\PaypalTest.csproj
+	EndGlobalSection
+EndGlobal
