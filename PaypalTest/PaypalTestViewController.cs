@@ -16,6 +16,8 @@ namespace PaypalTest
    
         }
 
+        PPDelegate myDelegate;
+        PayPalPaymentViewController paypalVC;
 
         public override void ViewDidLoad()
         {
@@ -54,31 +56,43 @@ namespace PaypalTest
                 Items = items
             };
 
-            var myDel = new PPDelegate();
+            myDelegate = new PPDelegate();
                     
-            var paypalVC = new PayPalPaymentViewController(payment, config, myDel);
+            paypalVC = new PayPalPaymentViewController(payment, config, myDelegate);
 
-            var payBtn = new UIButton(new RectangleF(10, 10, 200, 200));
+            var payBtn = new UIButton(new RectangleF(60, 100, 200, 60));
             payBtn.SetTitle("Pay", UIControlState.Normal);
+            payBtn.BackgroundColor = UIColor.Blue;
             payBtn.TouchUpInside += (object sender, EventArgs e) => {
                 this.PresentViewController(paypalVC, true, null);
             };
             Add(payBtn);
         }
+
+        protected class PPDelegate: PayPalPaymentDelegate
+        {
+            UIViewController parent;
+
+            public PPDelegate (UIViewController myParent)
+            {
+                parent = myParent;
+            }
+
+            public override void DidCancelPayment(PayPalPaymentViewController paymentViewController)
+            {
+                Debug.WriteLine("Payment Cancelled");
+                parent.DismissViewController(true, null);
+            }
+
+            public override void DidCompletePayment(PayPalPaymentViewController paymentViewController, PayPalPayment completedPayment)
+            {
+                Debug.WriteLine("Payment Completed");
+                parent.DismissViewController(true, null);
+            }
+        }
             
     }
 
-    public class PPDelegate: PayPalPaymentDelegate
-    {
-        public override void DidCancelPayment(PayPalPaymentViewController paymentViewController)
-        {
-            Debug.WriteLine("Payment Cancelled");
-        }
-
-        public override void DidCompletePayment(PayPalPaymentViewController paymentViewController, PayPalPayment completedPayment)
-        {
-            Debug.WriteLine("Payment Completed");
-        }
-    }
+   
 }
 
