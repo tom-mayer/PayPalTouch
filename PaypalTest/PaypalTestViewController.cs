@@ -56,7 +56,7 @@ namespace PaypalTest
                 Items = items
             };
 
-            myDelegate = new PPDelegate();
+            myDelegate = new PPDelegate(this);
                     
             paypalVC = new PayPalPaymentViewController(payment, config, myDelegate);
 
