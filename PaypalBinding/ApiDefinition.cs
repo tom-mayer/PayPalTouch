@@ -270,38 +270,36 @@ namespace Paypal
         string LibraryVersion {
             get;
         }
+            
+        [Field("PayPalEnvironmentProduction", "__Internal")]
+        NSString PayPalEnvironmentProduction { get; }
+
+        [Field("PayPalEnvironmentSandbox", "__Internal")]
+        NSString PayPalEnvironmentSandbox { get; }
+
+        [Field("PayPalEnvironmentNoNetwork", "__Internal")]
+        NSString PayPalEnvironmentNoNetwork { get; }
     }
 
-    /*
-    [Model, BaseType (typeof (NSObject))]
-    public partial interface PayPalFuturePaymentDelegate {
+    [Model, BaseType(typeof(NSObject))]
+    public partial interface PayPalFuturePaymentDelegate
+    {
+        [Export("payPalFuturePaymentDidCancel:")]
+        void  DidCancelFuturePayment (PayPalFuturePaymentViewController futurePaymentViewController);
 
-        [Export ("payPalFuturePaymentDidCancel:")]
-        void  (PayPalFuturePaymentViewController futurePaymentViewController);
-
-        [Export ("payPalFuturePaymentViewController:didAuthorizeFuturePayment:")]
+        [Export("payPalFuturePaymentViewController:didAuthorizeFuturePayment:")]
         void DidAuthorizeFuturePayment (PayPalFuturePaymentViewController futurePaymentViewController, NSDictionary futurePaymentAuthorization);
     }
 
+    [BaseType(typeof(UINavigationController))]
+    public partial interface PayPalFuturePaymentViewController
+    {
 
-    [BaseType (typeof (UINavigationController))]
-    public partial interface PayPalFuturePaymentViewController {
+        [Export("initWithConfiguration:delegate:")]
+        IntPtr Constructor (PayPalConfiguration configuration, PayPalFuturePaymentDelegate deleg);
 
-        [Export ("initWithConfiguration:delegate:")]
-        IntPtr Constructor (PayPalConfiguration configuration, PayPalFuturePaymentDelegate delegate);
-
-        [Export ("futurePaymentDelegate", ArgumentSemantic.Assign)]
+        [Export("futurePaymentDelegate", ArgumentSemantic.Assign)]
         PayPalFuturePaymentDelegate FuturePaymentDelegate { get; }
-
-        [Field ("PayPalEnvironmentProduction")]
-        NSString PayPalEnvironmentProduction { get; }
-
-        [Field ("PayPalEnvironmentSandbox")]
-        NSString PayPalEnvironmentSandbox { get; }
-
-        [Field ("PayPalEnvironmentNoNetwork")]
-        NSString PayPalEnvironmentNoNetwork { get; }
     }
-    */
 }
 
